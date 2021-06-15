@@ -1,25 +1,30 @@
 <template>
   <div>
-    <h1>Vue app</h1>
+    <h1 class="div">Vue app</h1>
     <h2>Count: {{ count }}</h2>
     <button @click="increment">Increment</button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from "vue";
 export default defineComponent({
-  name: 'App',
-  components: {},
-  data() {
-    return {
-      count: 0,
+  name: "App",
+  setup() {
+    let count = ref(0);
+    function increment() {
+      count.value++;
     }
+    return {
+      count,
+      increment,
+    };
   },
-  methods: {
-    increment() {
-      this.count += 1
-    },
-  },
-})
+});
 </script>
+
+<style lang="scss">
+.div {
+  color: red;
+}
+</style>
