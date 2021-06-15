@@ -1,11 +1,11 @@
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
   transform: {
-    '^.+\\.vue$': 'vue-jest',
-    '^.+\\js$': 'babel-jest',
-    '^.+\\.ts$': 'ts-jest',
+    "^.+\\.vue$": "vue-jest",
+    "^.+\\js$": "babel-jest",
+    "^.+\\.ts$": "ts-jest",
   },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$',
-  moduleFileExtensions: ['vue', 'js', 'ts'],
-}
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$",
+  moduleFileExtensions: ["vue", "js", "ts"],
+};
