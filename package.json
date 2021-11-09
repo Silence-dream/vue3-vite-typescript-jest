@@ -16,7 +16,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,vue,css,html,json}": ["npm run lint","git add ."]
+    "*": ["npm run lint","git add ."]
   },
   "dependencies": {
     "sass": "^1.35.0",
