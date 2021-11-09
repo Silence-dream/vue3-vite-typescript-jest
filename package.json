@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
     "lint": "eslint --fix --ext .js --ext .ts --ext .vue .",
     "format": "prettier --write '**/*.{ts,js,vue,css,html,json}'",
     "test": "jest"
   },
   "dependencies": {
     "sass": "^1.35.0",
-    "vue": "^3.0.7"
+    "vue": "^3.2.16"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -19,7 +20,7 @@
     "@types/jest": "^26.0.21",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
-    "@vitejs/plugin-vue": "^1.1.5",
+    "@vitejs/plugin-vue": "^1.9.3",
     "@vue/compiler-sfc": "^3.0.7",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
@@ -30,13 +31,14 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-vue": "^7.8.0",
-    "jest": "^27.0.4",
+    "jest": "^27.0.1",
     "prettier": "^2.2.1",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3",
-    "vite": "^2.1.2",
+    "ts-jest": "27.0.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.6.4",
     "vite-plugin-checker": "^0.3.4",
     "vls": "^0.7.6",
-    "vue-jest": "^5.0.0-alpha.8"
+    "vue-jest": "^5.0.0-alpha.8",
+    "vue-tsc": "^0.3.0"
   }
 }
