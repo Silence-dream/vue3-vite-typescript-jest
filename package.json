@@ -16,7 +16,10 @@
     }
   },
   "lint-staged": {
-    "*": ["npm run lint","git add ."]
+    "*.{ts,js,vue,css,html,json}": [
+      "npm run lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "sass": "^1.35.0",
@@ -40,7 +43,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-vue": "^7.8.0",
-    "husky": "^7.0.4",
+    "husky": "4.3.8",
     "jest": "^27.0.1",
     "lint-staged": "^11.2.6",
     "prettier": "^2.2.1",
