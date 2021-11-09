@@ -13,6 +13,9 @@
     "jsx": "preserve",
     "importHelpers": true,
     "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "lib": ["ESNext", "dom"]
   },
   "include": ["src/**/*.ts", "src/**/*.vue"],
