@@ -7,7 +7,16 @@
     "serve": "vite preview",
     "lint": "eslint --fix --ext .js --ext .ts --ext .vue .",
     "format": "prettier --write '**/*.{ts,js,vue,css,html,json}'",
+    "precommit": "lint-staged",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,vue,css,html,json}": ["npm run lint","git add ."]
   },
   "dependencies": {
     "sass": "^1.35.0",
@@ -31,7 +40,9 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-vue": "^7.8.0",
+    "husky": "^7.0.4",
     "jest": "^27.0.1",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.2.1",
     "ts-jest": "27.0.0",
     "typescript": "^4.2.4",
