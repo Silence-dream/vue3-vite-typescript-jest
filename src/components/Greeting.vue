@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 export default defineComponent({
-  name: 'Greeting',
+  name: "Greeting",
 
   data() {
     return {
-      greeting: 'Vue and TDD',
-    }
+      greeting: "Vue and TDD",
+    };
   },
-})
+});
 </script>
