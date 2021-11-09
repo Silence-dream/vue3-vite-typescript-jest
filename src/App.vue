@@ -25,6 +25,6 @@ export default defineComponent({
 
 <style lang="scss">
 .div {
-  color: red;
+  color: $color;
 }
 </style>

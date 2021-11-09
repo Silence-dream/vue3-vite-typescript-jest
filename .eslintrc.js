@@ -22,6 +22,12 @@ module.exports = {
     "simple-import-sort/exports": "error",
     "sort-imports": "off",
     "import/order": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto", // 忽略行尾序列
+      },
+    ],
   },
   plugins: ["simple-import-sort"],
 };
